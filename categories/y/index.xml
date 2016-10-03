@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Y on Daniel Palstra - IT Consultancy - Freelance IT Consultant in middleware and cloud solutions</title>
-    <link>http://danielpalstra.com/categories/y/</link>
-    <description>Recent content in Y on Daniel Palstra - IT Consultancy - Freelance IT Consultant in middleware and cloud solutions</description>
+    <title>Daniel Palstra - IT Consultancy - Freelance IT Consultant in middleware and cloud solutions</title>
+    <link>http://danielpalstra.com/categories/y/index.xml</link>
+    <description>Recent content on Daniel Palstra - IT Consultancy - Freelance IT Consultant in middleware and cloud solutions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jun 2015 19:57:08 +0200</lastBuildDate>
     <atom:link href="http://danielpalstra.com/categories/y/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -17,7 +16,7 @@
       <guid>http://danielpalstra.com/about/</guid>
       <description>
 
-&lt;h2 id=&#34;about-daniel:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;About Daniel&lt;/h2&gt;
+&lt;h2 id=&#34;about-daniel&#34;&gt;About Daniel&lt;/h2&gt;
 
 &lt;p&gt;Hi,&lt;/p&gt;
 
