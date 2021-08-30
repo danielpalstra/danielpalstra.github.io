@@ -1,0 +1,40 @@
+---
+title: "CephFS Volume capabilities"
+date: 2021-08-30T11:41:32+02:00
+draft: true
+tags: ["ceph", "storage", "kubernetes", "k8s", "cephfs"]
+categories: ["ceph", "kubernetes"]
+---
+
+Ceph setup
+Zoals hierboven vermeld is er een Ceph cluster aangemaakt op basis van 3 VMs. De 3 VMs bevatten samen de monitors, managers en OSDs.
+
+CephFS setup
+De kubernetes Ceph CSI heeft "volume functionaliteit" nodig die door CephFS en de Ceph volumes manager module wordt aangeboden. Ceph volumes worden geimplementeerd door CephFS exports.
+
+Bij het aanmaken van het eerste volume wordt CephFS geinstalleeerd binnen het cluster en wordt er een MDS daemon aangemaakt.
+
+ceph fs volume create ice-ads-dev --placement=3
+Vervolgens kan er doormiddel van onderstaande commando een client key worden aangemaakt die gebruik kan maken van het volume.
+
+ceph fs authorize cephfs client.ice-ads-k8s / rw
+Met bovenstaande key kan de client nu gebruik maken van CephFS. Echter, omdat k8s doormiddel van de CSI de volumes module aanspreekt heeft de client ook rechten nodig om de Ceph MGR te gebruiken. Zie permissions voor het verdere uitzoekwerk.
+
+## Permissions (Ceph capabilities)
+
+In de Ceph documentatie raden ze aan om de Ceph CSI mgr allow rw rechten te geven. Dit is echter veel te breed en zou de CSI rechten geven het hele Ceph cluster te managen. We hebben daarom veel tijd besteed aan het vinden van meer restrictive caps. Tot nu toe zijn we uitgekomen op:
+
+	caps: [mds] allow rw fsname=danielfs
+	caps: [mgr] allow command "fs subvolumegroup create", allow command "fs subvolume create", allow command "fs subvolume getpath", allow command "fs subvolume info", allow command "fs subvolume ls", allow command "fs subvolume rm"
+	caps: [mon] allow r fsname=danielfs
+	caps: [osd] allow rw pool=cephfs.danielfs.meta, allow rw pool=cephfs.danielfs.data
+Alleen de mgr caps moeten nog verder gerestrict worden op de juiste fsname.
+
+## Uitzoekwerk Ceph zijde
+
+Hoe kunnen we het gebruik van CephFS en de volumes module van de Ceph manager gebruiken binnen onze bestaande clusters?
+Hierboven worden de benodigde Ceph capabilities beschreven die het mogelijk maken om de Ceph volumes module te gebruiken. Getest moet worden welke andere mogelijkheden een gebruiker heeft buiten het gebruik van CephFS en de volumes module.
+Hoe kunnen we het gebruik van CephFS volumes automatiseren en beschikbaar stellen voor andere teams?
+Verdeling CephFS, CephRBD, Ceph RGW en OSDs
+@marcel.kuiper heeft de wens uitgesproken om CephFS te scheiden van bijvoorbeeld de RadosGW. Welke mogelijkheden hebben we om gescheiden OSDs in te zetten? (Graag verder aanvullen)
+
