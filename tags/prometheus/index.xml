@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Daniel Palstra</title>
-    <link>https://danielpalstra.com/</link>
-    <description>Recent content on Daniel Palstra</description>
+    <title>prometheus on Daniel Palstra</title>
+    <link>https://danielpalstra.com/tags/prometheus/</link>
+    <description>Recent content in prometheus on Daniel Palstra</description>
     <image>
       <url>https://danielpalstra.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://danielpalstra.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Sep 2021 20:41:32 +0200</lastBuildDate><atom:link href="https://danielpalstra.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Sep 2021 20:41:32 +0200</lastBuildDate><atom:link href="https://danielpalstra.com/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploying Alertmanager Signal Receiver with Nomad</title>
       <link>https://danielpalstra.com/posts/alertmanager_signal_receiver/</link>
@@ -20,18 +20,6 @@
 This blog post assumes the following is installed and configured.
  A Consul cluster. A Nomad cluster. Consul Connect is configured for both Consul and Nomad. A Signal user is registered and configured by following the steps from the receivers Setup  Registration of the Signal user creates a JSON file which contains all secrets and configuration.</description>
     </item>
-    
-    <item>
-      <title>About Daniel Palstra</title>
-      <link>https://danielpalstra.com/about/</link>
-      <pubDate>Mon, 30 Aug 2021 11:41:32 +0200</pubDate>
-      
-      <guid>https://danielpalstra.com/about/</guid>
-      <description>Hi, my name is Daniel Palstra. I&amp;rsquo;m a freelance DevOps Engineer living in the Netherlands. I like to deliver cool IT solutions that help my clients win! My fields of expertise rely in DevOps engineering, cloud solutions and API integration.
-Current assignment I am currently active at the Dutch National Police in the role of Cloud Engineer.
-Clients I have worked for several organisations over the past years. Find a list of them on my linkedin page</description>
-    </item>
-    
     
   </channel>
 </rss>

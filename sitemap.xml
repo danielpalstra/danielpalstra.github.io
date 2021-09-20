@@ -2,15 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://danielpalstra.com/tags/alertmanager/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/categories/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/ci/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/consul/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/posts/alertmanager_signal_receiver/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/gitlab/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/gitlab-ci/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/hashicorp/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/categories/monitoring/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/nomad/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/posts/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/prometheus/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/categories/prometheus/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/signal/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
+    <loc>https://danielpalstra.com/tags/</loc>
+    <lastmod>2021-09-19T20:41:32+02:00</lastmod>
+  </url><url>
     <loc>https://danielpalstra.com/about/</loc>
     <lastmod>2021-08-30T11:41:32+02:00</lastmod>
   </url><url>
     <loc>https://danielpalstra.com/archives/</loc>
-  </url><url>
-    <loc>https://danielpalstra.com/categories/</loc>
-  </url><url>
-    <loc>https://danielpalstra.com/</loc>
-  </url><url>
-    <loc>https://danielpalstra.com/tags/</loc>
   </url>
 </urlset>
